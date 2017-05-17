@@ -1,9 +1,3 @@
 server:
-- url: /posts
-  match: regex
-
-client:
 - url: /
-  match: postregex
-  dir: web
-
+  match: regex
