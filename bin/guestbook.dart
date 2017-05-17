@@ -8,7 +8,7 @@ class Posts extends Vane {
   String collectionName = "posts";
 
   /// List all from collection "posts"
-  @Route("/posts/list", method: "GET")
+  @Route("/list", method: "GET")
   Future list() {
     mongodb.then((mongodb) {
       var postColl = mongodb.collection(collectionName);
@@ -30,7 +30,7 @@ class Posts extends Vane {
   }
 
   /// Add post to collection "posts"
-  @Route("/posts/add", method: POST)
+  @Route("/add", method: POST)
   Future add() {
     mongodb.then((mongodb) {
       var postColl = mongodb.collection(collectionName);
@@ -52,7 +52,7 @@ class Posts extends Vane {
   }
 
   /// Remove all posts in collection "posts"
-  @Route("/posts/remove", method: DELETE)
+  @Route("/remove", method: DELETE)
   Future remove() {
     mongodb.then((mongodb) {
       var postColl = mongodb.collection(collectionName);
