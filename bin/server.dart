@@ -6,5 +6,5 @@ import 'package:mongo_dart/mongo_dart.dart';
 
 part 'guestbook.dart';
 
-void main() => serve(port: 8000);
+void main() => serve();
 
