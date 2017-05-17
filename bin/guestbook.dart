@@ -8,7 +8,7 @@ class Posts extends Vane {
   String collectionName = "posts";
 
   /// List all from collection "posts"
-  @Route("/list", method: "GET")
+  @Route("/", method: "GET")
   Future list() {
     mongodb.then((mongodb) {
       var postColl = mongodb.collection(collectionName);
