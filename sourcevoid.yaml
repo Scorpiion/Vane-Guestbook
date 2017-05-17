@@ -1,11 +1,8 @@
 runtime: dart
 version: latest
 
-nginx_enable: true
-
 build:
   - pub get
-  - pub build
 
 start: dart bin/server.dart
 
